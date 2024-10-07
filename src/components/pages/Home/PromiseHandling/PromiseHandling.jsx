@@ -1,13 +1,15 @@
 import { use } from "react";
 
-const handlePromide = (async = () => {
+const handlePromide = () => {
   return new Promise((resolve, reject) => {
+    //
     setTimeout(() => {
-      resolve("promise is resolved");
-    }),
-      5000;
+      console.log("yooo");
+      resolve("Promise is resolved");
+      // reject("Promise is rejected");
+    }, 5000);
   });
-});
+};
 
 const PromiseHandling = () => {
   const res = use(handlePromide());

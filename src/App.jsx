@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import ProductsGallery from "./components/pages/Home/ProductsGallery/ProductsGallery";
 import Loader from "./components/reusable/ProductCard/Loader/Loader";
+import PromiseHandling from "./components/pages/Home/PromiseHandling/PromiseHandling";
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
           </div>
         }
       >
-        <ProductsGallery />
+        {/* <ProductsGallery /> */}
+        <PromiseHandling />
       </Suspense>
     </>
   );
