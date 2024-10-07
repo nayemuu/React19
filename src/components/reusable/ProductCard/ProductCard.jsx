@@ -3,7 +3,7 @@ import React from "react";
 const ProductCard = ({ product }) => {
   return (
     <div>
-      <div className="relative delay-150 w-full lg:h-[310px] bg-[#f8f8f8] bg-center transition-all duration-3000 ease-in-out transform overflow-hidden">
+      <div className="relative delay-150 w-full h-[250px] lg:h-[310px] bg-[#f8f8f8] bg-center transition-all duration-3000 ease-in-out transform overflow-hidden">
         <img
           src={product.images[0]}
           fill
