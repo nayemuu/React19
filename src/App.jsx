@@ -3,23 +3,25 @@ import ProductsGallery from "./components/pages/Home/ProductsGallery/ProductsGal
 import Loader from "./components/reusable/ProductCard/Loader/Loader";
 import PromiseHandling from "./components/pages/Home/PromiseHandling/PromiseHandling";
 import ContextHandling from "./components/pages/ContextHandling/ContextHandling";
+import FormHandling from "./components/pages/FormHandling/FormHandling";
 
 function App() {
   return (
     <>
       {/* <div className="text-red-600">yoo</div> */}
       <ContextHandling />
+      <FormHandling />
 
-      <Suspense
+      {/* <Suspense
         fallback={
           <div className="flex justify-center mt-7">
             <Loader />
           </div>
         }
       >
-        {/* <ProductsGallery /> */}
+        <ProductsGallery />
         <PromiseHandling />
-      </Suspense>
+      </Suspense> */}
     </>
   );
 }
