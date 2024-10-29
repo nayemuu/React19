@@ -9,10 +9,10 @@ function App() {
   return (
     <>
       {/* <div className="text-red-600">yoo</div> */}
-      <ContextHandling />
-      <FormHandling />
+      {/* <ContextHandling />
+      <FormHandling /> */}
 
-      {/* <Suspense
+      <Suspense
         fallback={
           <div className="flex justify-center mt-7">
             <Loader />
@@ -20,8 +20,8 @@ function App() {
         }
       >
         <ProductsGallery />
-        <PromiseHandling />
-      </Suspense> */}
+        {/* <PromiseHandling /> */}
+      </Suspense>
     </>
   );
 }
