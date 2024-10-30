@@ -1,5 +1,5 @@
 import { use } from "react";
-import ProductCard from "../../../reusable/ProductCard/ProductCard2";
+import ProductCard from "../../../reusable/ProductCard/ProductCard3";
 
 const fetchdata = async () => {
   const res = await fetch("https://dummyjson.com/products");
@@ -21,7 +21,7 @@ function ProductsGallery(props) {
           <ProductCard product={product} key={product.id} />
         ))} */}
 
-        {data.products.slice(0, 1).map((product) => (
+        {data.products.slice(0, 3).map((product) => (
           <ProductCard product={product} key={product.id} />
         ))}
       </div>
